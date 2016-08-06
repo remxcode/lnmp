@@ -10,5 +10,6 @@
 
 Install_composer() {
 yum install composer -y
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
 composer global require "hirak/prestissimo:^0.3"
 }
