@@ -67,7 +67,7 @@ make clean
 if [[ $Apache_version =~ ^[1-2]$ ]] || [ -e "$apache_install_dir/bin/apxs" ];then
     ./configure --prefix=$php_install_dir --with-config-file-path=$php_install_dir/etc \
 --with-config-file-scan-dir=$php_install_dir/etc/php.d \
---with-apxs2=$apache_install_dir/bin/apxs $PHP_cache_tmp --disable-fileinfo \
+--with-apxs2=$apache_install_dir/bin/apxs $PHP_cache_tmp --enable-fileinfo \
 --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd \
 --with-iconv-dir=/usr/local --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib \
 --with-libxml-dir=/usr --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-exif \
